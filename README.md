@@ -67,7 +67,7 @@ You may add helper functions, internal state, events, errors, or imports as you 
 5. **Bad-debt reasoning** in `liquidate()` — the comment explaining your choice matters. There are at least three reasonable patterns (revert, liquidator absorbs, socialize across share holders). Any of them is defensible; we want to see you *named the problem and chose deliberately*.
 6. **HF guard** in `withdraw()` — a withdrawer with outstanding debt must not be allowed to walk away with collateral that would put their own position below water.
 7. **Code hygiene** — `SafeERC20` for token transfers, checks-effects-interactions order, no missing access checks where they matter.
-8. **Tests (all test should pass)** — starter tests live in `test/MiniLendingVault.t.sol`. They will fail until you implement. Add your own tests to demonstrate edge cases (liquidation happy-path, bad-debt scenario, withdraw HF guard). Tests you write count toward grading.
+8. **Tests**  — starter tests live in `test/MiniLendingVault.t.sol`. They will fail until you implement. Add your own tests to demonstrate edge cases (liquidation happy-path, bad-debt scenario, withdraw HF guard). Tests you write count toward grading.
 
 ---
 
