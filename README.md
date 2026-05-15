@@ -12,7 +12,6 @@ It's a single file. There's a Foundry harness provided if you want it, but you c
 - **Recording:** record your screen for the duration of the exercise (Loom, OBS, QuickTime — your choice). Submit the recording with your solution.
 - **Environment:** Remix is fine. Any editor + Solidity ^0.8.20 + OpenZeppelin imports will work. The Foundry harness in this repo is provided as a convenience.
 - **AI tooling:** declare on camera at the start whether you intend to use Copilot, Cursor, ChatGPT, or similar. We do not forbid it, but solutions that show *understanding* will score higher than solutions that show *autocomplete*.
-- **Communication:** think out loud. We grade your reasoning at least as much as your final code.
 
 ---
 
@@ -89,7 +88,7 @@ If you prefer Foundry over Remix:
 ```bash
 forge build           # compile
 forge test            # run starter tests
-forge test -vv        # with logs
+forge test -vvv        # with logs
 ```
 
 ---
@@ -108,6 +107,6 @@ If you finish early, use the remaining time to:
 
 ## After the test
 
-Submit your solution + recording to the email address provided in your invitation. We aim to respond within 48 hours either way.
+Submit your solution + recording to the email address provided in your invitation.
 
 Good luck.
