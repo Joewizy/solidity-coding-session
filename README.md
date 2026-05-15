@@ -9,7 +9,7 @@ It's a single file. There's a Foundry harness provided if you want it, but you c
 ## What we expect
 
 - **Time:** 90 minutes from "start" to submission. Stop the recording when the time is up, regardless of completion.
-- **Recording:** record your screen for the duration of the exercise (Loom, OBS, QuickTime — your choice). Submit the recording with your solution.
+- **Recording (required):** record your screen + voice for the full duration and **narrate your reasoning out loud as you write the code** — what you're doing, why, what trade-offs you're weighing, where you're unsure, and how you confirm each task works. A silent screen-capture will be scored lower than an incomplete-but-well-explained one. Use whatever tool you like (Loom, OBS, QuickTime, ScreenStudio, Zoom local recording — your choice).
 - **Environment:** Remix is fine. Any editor + Solidity ^0.8.20 + OpenZeppelin imports will work. The Foundry harness in this repo is provided as a convenience.
 - **AI tooling:** declare on camera at the start whether you intend to use Copilot, Cursor, ChatGPT, or similar. We do not forbid it, but solutions that show *understanding* will score higher than solutions that show *autocomplete*.
 
@@ -17,8 +17,11 @@ It's a single file. There's a Foundry harness provided if you want it, but you c
 
 ## What to submit
 
-1. The completed `src/MiniLendingVault.sol` file.
-2. Your screen recording.
+1. The completed `src/MiniLendingVault.sol` file (plus any tests you added under `test/`).
+2. **A viewable link to your screen recording.** Upload the video to whichever host is easiest for you — Loom, YouTube (unlisted is fine), Google Drive, Dropbox, Vimeo, etc. — and paste the link into your submission email. Requirements for the link:
+  - **Anyone with the link must be able to view it without requesting access.** If you use Google Drive, set sharing to "Anyone with the link → Viewer" before sending. If you use YouTube, "Unlisted" is fine; "Private" is not.
+  - **Do not send raw video files** as email attachments — links only.
+  - Test the link in an incognito window before you submit. If it asks you to log in or request access, it will ask us the same thing.
 3. A short note (3–5 sentences) at the top of `MiniLendingVault.sol` describing the trade-offs you made — especially for the bad-debt edge case in Task 4.
 
 ---
@@ -86,7 +89,7 @@ You may add helper functions, internal state, events, errors, or imports as you 
 If you prefer Foundry over Remix:
 
 ```bash
-forge build           # compile
+emforge build           # compile
 forge test            # run starter tests
 forge test -vvv        # with logs
 ```
@@ -107,6 +110,13 @@ If you finish early, use the remaining time to:
 
 ## After the test
 
-Submit your solution + recording to the email address provided in your invitation.
+Email the following to **[engagewithme007@gmail.com](mailto:engagewithme007@gmail.com)**:
+
+1. Your completed code — either as a `.zip` or GitHub repo
+2. **The viewable recording link** (see "What to submit" above for sharing requirements).
+
+Use a clear subject line, e.g. `DefiLords coding test — <Your Name>`.
+
+Submissions missing the recording link, or with a recording link that requires access approval, will be returned for resubmission with the original 90-minute clock already spent.
 
 Good luck.
